@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="200dp"
+        android:id="@+id/Vhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12sp"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/Vhod1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Vhod1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+        android:text="Выполните вход \n или зарегистрируйтесь."
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/parol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="забыли пароль?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/najmi"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="нажмите сюда"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/parol" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_marginBottom="17dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/parol"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_pochta"
+            android:background="@color/white"
+            android:hint="Введите вашу почту"
+            android:paddingStart="12dp"
+            android:layout_width="300dp"
+            android:layout_height="48dp" />
+
+        <EditText
+            android:id="@+id/et_parol"
+            android:background="@color/white"
+            android:hint="Введите пароль"
+            android:layout_marginTop="12dp"
+            android:paddingStart="12dp"
+            android:layout_width="300dp"
+            android:layout_height="48dp" />
+
+        <Button
+            android:id="@+id/voiti"
+            android:layout_width="300dp"
+            android:backgroundTint="@color/grey"
+            android:layout_marginTop="12dp"
+            android:text="Войти"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="800dp"-->
+    <!--        android:text="Добро пожаловать!"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="70dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="170dp"-->
+    <!--        android:text="Вход"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="80dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="800dp"-->
+    <!--        android:text="Добро пожаловать!"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="70dp" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
